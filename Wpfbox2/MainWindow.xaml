@@ -1,0 +1,62 @@
+﻿<Window x:Class="Wpfbox2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpfbox2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock>
+            Здравствуйте! Вам нужно ответить на 4 простых вопроса:
+            </TextBlock>
+
+            <TextBlock>
+            1. Какие марки авто лучше?
+            </TextBlock>
+
+            <StackPanel Name="Question1">
+                <CheckBox x:Name="Q1_1" Content="Toyota" Tag="Correct" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="Q1_2" Content="BMW" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="Q1_3" Content="Mercedes" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="Q1_4" Content="Mazda" Tag="Correct" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+            </StackPanel>
+
+            <TextBlock>
+            2. У каких стран из перечисленных есть ядерное оружие?
+            </TextBlock>
+
+            <StackPanel Name="Question2">
+                <CheckBox x:Name="Q2_1" Content="Япония" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="Q2_2" Content="Китай" Tag="Correct" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="Q2_3" Content="Южная Корея" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="Q2_4" Content="Северная Корея" Tag="Correct" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+            </StackPanel>
+
+            <TextBlock>
+            3. Что даёт Китайская партия в знак поощерения?
+            </TextBlock>
+
+            <StackPanel Name="Question3">
+                <CheckBox x:Name="Q3_1" Content="Социальный рейтинг" Tag="Correct" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="Q3_2" Content="Медаль" Tag="Correct" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="Q3_3" Content="Миска риС" Tag="Correct" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="Q3_4" Content="Кошко-жена" Tag="Correct" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+            </StackPanel>
+
+            <TextBlock>
+            4. Какие страны лучше из перечисленных?
+            </TextBlock>
+
+            <StackPanel Name="Question4">
+                <CheckBox x:Name="Q4_1" Content="Германия" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="Q4_2" Content="Япония" Tag="Correct" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="Q4_3" Content="Россия" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                <CheckBox x:Name="Q4_4" Content="Китай" Tag="Correct" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+            </StackPanel>
+
+            <Button Content="Отправить ответ" Height="42" Margin="50,40,40,0" Width="500" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
